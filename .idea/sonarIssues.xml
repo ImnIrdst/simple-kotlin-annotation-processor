@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/source/kaptKotlin/debug/UserKsonUtil.kt/pr/ann/imn/annotation_processor/UserKsonUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/pr/ann/imn/annotation_processor/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/generator/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/generator/src/main/java/pr/ann/imn/generator/GenName.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/generator/src/main/java/pr/ann/imn/generator/Generator.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/generator/src/main/java/pr/ann/imn/generator/Kson.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/generator/src/main/java/pr/ann/imn/generator/KsonProcessor.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/tutorial-prjs/kotlin/ViewModelAnnotationsKt/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/tutorial-prjs/kotlin/ViewModelAnnotationsKt/processor/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/tutorial-prjs/kotlin/ViewModelAnnotationsKt/processor/src/main/java/me/osama/vmannotationprocessor/BindFieldsProcessor.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/tutorial-prjs/kotlin/ViewModelAnnotationsKt/sample/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/tutorial-prjs/kotlin/ViewModelAnnotationsKt/sample/src/main/java/me/osama/viewmodelannotationskt/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/tutorial-prjs/kotlin/ViewModelAnnotationsKt/sample/src/main/java/me/osama/viewmodelannotationskt/ViewHolders.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
