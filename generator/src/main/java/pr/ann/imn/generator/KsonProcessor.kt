@@ -13,6 +13,7 @@ import javax.lang.model.SourceVersion
 import javax.lang.model.element.Element
 import javax.lang.model.element.ElementKind
 import javax.lang.model.element.TypeElement
+import javax.tools.Diagnostic
 
 @AutoService(Processor::class)
 class KsonProcessor : AbstractProcessor() {
@@ -43,29 +44,23 @@ class KsonProcessor : AbstractProcessor() {
 
     private fun generateClass(klass: Element, pack: String) {
         val fileName = "${klass.simpleName}KsonUtil"
-        val string = StringBuilder("return \"{ ")
-        klass.enclosedElements.forEach {
-            println("$it ${it.kind}")
-            when(it.kind) {
+        val tripleQuote = "\"\"\""
+        val body = mutableListOf<String>()
+        klass.enclosedElements.forEach { element ->
+            when(element.kind) {
                 ElementKind.FIELD -> {
-                    string.append("\\\"")
-                    string.append(it)
-                    string.append("\\\": ")
-                    string.append("\\\"")
-                    string.append("\$")
-                    string.append(it)
-                    string.append("\\\"")
-                    string.append(' ')
+                    body.add(""""$element": ${'$'}$element""")
                 }
                 else -> { }
             }
         }
-        string.append("}\"")
+        val bodyString = body.joinToString(", ")
+        val statement = """return $tripleQuote{$bodyString}$tripleQuote"""
         val file = FileSpec.builder(pack, fileName)
             .addFunction(FunSpec.builder("toJson")
                 .returns(String::class)
                 .receiver(klass.asType().asTypeName())
-                .addStatement(string.toString())
+                .addStatement(statement)
                 .build())
             .build()
 
