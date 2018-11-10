@@ -18,10 +18,6 @@ import javax.tools.Diagnostic
 @AutoService(Processor::class)
 class KsonProcessor : AbstractProcessor() {
 
-    override fun init(p0: ProcessingEnvironment) {
-        super.init(p0)
-    }
-
     override fun getSupportedAnnotationTypes(): MutableSet<String> {
         println("getSupportedAnnotationTypes")
         return mutableSetOf(Kson::class.java.name)
