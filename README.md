@@ -1,6 +1,6 @@
 # Simple kotlin annotation processor
 
-Contains two simple annotation processors ([HelloWorld](https://github.com/ImnIrdst/simple-kotlin-annotation-processor/blob/master/generator/src/main/java/pr/ann/imn/generator/Generator.kt) and [Kson](https://github.com/ImnIrdst/simple-kotlin-annotation-processor/blob/master/generator/src/main/java/pr/ann/imn/generator/KsonProcessor.kt)) in a simple android application, written for educational purposes.
+Contains two simple annotation processors ([HelloWorld](https://github.com/ImnIrdst/simple-kotlin-annotation-processor/blob/master/generator/src/main/java/pr/ann/imn/generator/Generator.kt) and [Kson](https://github.com/ImnIrdst/simple-kotlin-annotation-processor/blob/master/generator/src/main/java/pr/ann/imn/generator/KsonProcessor.kt)) in a simple android application, developed for educational purposes.
 
 Based on https://github.com/miquelbeltran/kotlin-code-gen-sample project
 
